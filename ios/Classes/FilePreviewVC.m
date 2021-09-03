@@ -6,6 +6,7 @@
 //
 
 #import "FilePreviewVC.h"
+#import <WebKit/WebKit.h>
 
 @interface FilePreviewVC ()
 @property (nonatomic, strong) WKWebView *myWebView;
