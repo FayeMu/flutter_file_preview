@@ -24,12 +24,12 @@
   self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
   self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
   self.myWebView = [[WKWebView alloc] initWithFrame: self.view.frame];
+  [self.view addSubview:self.myWebView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     self.myWebView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-    [self.view addSubview:self.myWebView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
